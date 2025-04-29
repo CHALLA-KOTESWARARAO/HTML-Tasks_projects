@@ -4,97 +4,116 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Application form </title>
+    <link rel="icon" href="./submit icon.png">
 </head>
 <body>
     <img src="./buspass.png">
-    <h1>Applicant Details</h1>
+    <h1></h1>
     <table width="1300" border="1" cellspacing="0">
- <tr >
-            <td>
-                <form><pre>
-            <label for="Name"><b>Name</b></label>            <input type="text" id="Name"><br>
-            <label for="dob"><b>Date of birth</b></label>   <input type="text" id="dob"><br>
-            <label for="age"><b>Age As on :</b></label>     <input type="date" id="age"><br>
-            <label for="no"><b>WhatsApp No:</b></label>    <input type="number" id="no"><br>
-            <label for="photo"><b>Photo</b></label>            <input type="file" id="photo"><br>
-                </pre></form>
-            </td>
-            <td>
-                <form><pre>
-            <label for="father"><b>NameFather's / Guardian's</b></label>    <input type="text" id="father"><br>
-            <label for="gender"><b>Gender</b></label>                       <input type="radio" id="gender">Male <input type="radio" id="gender">Female<br>
-            <label for="adhar"><b>Aadhaar No:</b></label>                   <input type="text" id="adhar"><br>
-            <label for="email"><b>E-mail Id:</b></label>                    <input type="email" id="email"><br>
-                </pre></form>
-            </td>
-        </tr>
-    </table>
-    <h1>Residential Address Details</h1>
-    <table width="1300" border="1" cellspacing="0">
-        <tr>
-            <td>
-                <form>
-                    <pre>
-            <label for="addr">Applicant's Address:</label>   <textarea>
-                        </textarea><br>
-            <lable for="mandal">Mandal</lable>                 <select>
-                            <option value="1">Hyderabad</option><br>
-                        </select><br>
-            <labale for="pin">pincode</labale>                <input type="text" id="pin">
-                        
-                </pre>
-            <td>
-             <pre>
-    <lable for="mandal">District</lable>     <select>
-                                <option value="1">Hyderabad</option><br>
+ <fieldset><legend>Applicant Details</legend>
+<form autocomplete="off"><pre>
+<label for="Name"><b>Name</b></label>            <input type="text" id="Name">                 <label for="father"><b>NameFather's / Guardian's</b></label>    <input type="text" id="father"><br>
+<label for="dob"><b>Date of birth</b></label>   <input type="text" id="dob">                 <label for="gender"><b>Gender</b></label>                       <input type="radio" id="gender" name="gender">Male <input type="radio" id="gender" name="gender">Female<br>
+<label for="age"><b>Age As on :</b></label>     <input type="date" id="age">                         <label for="adhar"><b>Aadhaar No:</b></label>                  <input type="text" id="adhar"><br>
+<label for="no"><b>WhatsApp No:</b></label>    <input type="number" id="no">                 <label for="email"><b>E-mail Id:</b></label>                  <input type="email" id="email"><br>
+<label for="photo"><b>Photo</b></label>           <input type="file" id="photo">
+</pre></form> </fieldset><br>
+
+
+<fieldset>
+<legend>Residential Address Details</legend>
+<form autocomplete="off">
+<pre>
+<label >Applicant's Address:</label>   <textarea>                                                   
+</textarea><br>
+<lable for="mandal">Mandal</lable>                 <select >
+                            <option  hidden selected>Mandal</option>
+                            <option value="1">Medchal</option>
+                            <option value="1">chintal</option>
+                            <option>Rangareddy</option>
+                            <option>vikarabad</option><br>
+                        </select>
+
+<lable for="pin">pincode:</lable>               <input type="text" id="pin">
+
+<lable for="District">District</lable>               <select>
+                                <option value="1">Hyderabad</option>
             </select><br>
-    <lable for="mandal">Village</lable>     <select>
-                                  <option value="1">Hyderabad</option>
+<lable >Village</lable>                <select>
+                                  <option >Hyderabad</option>
             </select>
             </pre>
-                        
-            </td>
-                </form>
-            </td>
-        </tr>
-    </table>
-    <h1>Pass Type Details</h1>
-    <table width="1300" border="1" cellspacing="0">
-        <tr><td colsapn="2">
-            <pre>
-            <lable for="mandal">City</lable>     <select>
-                             <option value="1">Hyderabad</option><br>
+</form></fieldset><br>
+<fieldset>
+    <legend>Pass Type Details</legend>
+
+<pre>
+<lable for="city">City</lable>                 <select>
+                             <option selected hidden>City</option>
+                             <option >Kukatpally</option>
+                             <option >KPHB</option>
+                             <option >Ameerpet</option>
+                             <option >Koti</option>
                 </select><br>
-            <lable for="mandal">Passtype</lable>     <select>
-                  <option value="1">------select----</option>
-                </select>
-            </pre>
-        </td></tr>
-    </table>
-    <h1>Mode of Payment & Pass Collection</h1>
-    <table width="1300" border="1" cellspacing="0">
-        <tr><td colsapn="2">
-            <pre>
-                <lable for="mandal">Payment Mode:</lable>     <select>
-                    <option value="1">Select Payment Mode</option><br>
-                </select><br>
-                <lable for="mandal"></lable>Pass Delivery Mode:<select> <option value="1">Select pass Delivery mode</option>
-                </select><br>
-                <lable for="mandal">Center at which
-                you want to Collect Pass </lable>     <select>
-                    <option value="1">------select----</option>
-                </select>
-            </pre>
-        </td></tr>
-    </table><br>
-    <form>
-        <center>
-            
-            <input type="submit" value="Submit">
-        </center>
-      
-            
-        
+<lable >Passtype</lable>             <select>
+    <option selected hidden>----select----</option>
+    <option >Genaral pass</option>
+    <option >General Ordinary Route MTL</option>
+    <option >General Metro Express</option>
+    <option >Ordinary Pass</option>
+</select><br>
+<lable >From Place Distric</lable>   <select>
+    <option selected hidden>----select----</option>
+    <option >Hyderabad</option>
+</select><br>
+<lable >To Place District</lable>    <select>
+    <option selected hidden>----select----</option>
+    <option >Hyderabad</option>
+</select><br>
+<lable for="fromplace">From Place</lable>           <input type="text" id="fromplace">  <br>     
+<lable for="toplace">To Place</lable>             <input type="text" id="toplace"><br>
+<lable >Route(From--Via--To)</lable> <select>
+    <option selected hidden>----select----</option>
+    <option >Select</option>
+</select><br>
+</pre></fieldset><br>
+<fieldset>
+<legend>Mode of Payment & Pass Collection</legend>
+    
+<form autocomplete="off">
+<pre>
+<lable>Payment Mode:</lable>             <select>
+                <option selected hidden>Select Payment Mode</option>
+                <option >UPI</option>
+                <option >SBI PAY</option>
+                <br>
+            </select><br>
+<lable>Pass Delivery Mode:</lable>       <select> 
+                <option selected hidden>Select pass Delivery mode</option>
+                <option >At Counter</option>
+                
+            </select><br>
+<lable >Center at which
+you want to Collect Pass </lable> <select>
+                <option >------select----</option>
+                <option>RTC ABIDS --HYD</option>
+                <option>RTC AIRPORT--HYD</option>
+                <option>RTC JBS--HYD</option>
+                <option>RTC BALANAGAR--HYD</option>
+                <option>RTC KOTI--HYD</option>
+                <option>RTC KPHB--HYD</option>
+            </select>
+        </pre>
     </form>
+</fieldset>      
+
+<form autocomplete="off" action="./complete.html">
+
+<pre>
+    <center>
+    <input type="submit" value="Submit">
+    </center>
+</pre>
+</form>
 </body>
 </html>
