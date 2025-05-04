@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KR BUS</title>
+    <link rel="icon" href="./public-transport.png">
+</head>
+<body>
+    <nav>
+        <table cellspacing="50">
+            <tr>
+                <th><a href="./bus.html">Home</a></th>
+                <th><a href="./ticket Status.html">Ticket Status</a></th>
+                <th><a href="./cancel ticket.html">Cancel Ticket</a></th>
+
+            </tr>
+        </table>
+    </nav>
+    <fieldset width="200">
+        <legend>Search for bus tickets!</legend>
+        <form action="./Book ticket.html"><pre>
+                    <lable for="from"><b>Depart From:</b></lable>   <select id="from" name="city" required>
+                <option selected hidden>--------FROM--------</option>
+                <option >Hyderabad</option>
+                <option disabled>Vijayawada</option>
+                <option disabled>Guntur</option>
+                <option disabled>Ongole</option>
+                <option disabled>Nellore</option>
+            </select><br>
+                     <lable for="to"><b>Going To:</b></lable>     <select id="to" required>
+                <option selected hidden>----------TO-----------</option>
+                <option disabled>Hyderabad</option>
+                <option >Vijayawada</option>
+                <option disabled>Guntur</option>
+                <option disabled>Ongole</option>
+                <option disabled>Nellore</option>
+            </select><br>
+                    <b>Select Date:</b>   <input  type="date" value="2025-05-04" readonly><br><br>
+                              <input type="submit" value="Check Availability"> 
+        </pre></form>
+    </fieldset>
+    
+        <ul>
+            <li>Hyderabad - Vijayawada</li>
+            <li>Hyderabad - Visakhapatnam</li>
+            <li>Hyderabad - Tirupati</li>
+            <li>Hyderabad - Nellore</li>
+            <li>Hyderabad - Ongole</li>
+           <li>Vijayawada - Hyderabad</li></ul>
+    
+</body>
+</html>
